@@ -1,54 +1,13 @@
-# Problem Hook & Value Proposition — [StreamLine / RouteLogic / your initiative]
+# Problem Hook & Value Proposition (Module 1)
 
-> Module 1 · Develop Strategic Product Thinking — ★ Deliverable 1 (Part A)
->
-> Define the *why* behind your project: bridge the company's strategic crisis to a specific user's moment of misery.
-> This is a living document — draft it now, then finalize the **hypothesis** in Module 3.
+## Responses
+- **Chosen path, which scenario are you committing to? (StreamLine or RouteLogic, or your own):** StreamLine
+- **Strategic crisis, based on the brief, if the company does nothing for 12 months, what happens to its market position?:** If the company does nothing for 12 months, its market position will erode significantly as engagement continues to decline and the platform’s reputation as a “warehouse of mid-tier content” hardens. Competitors with stronger curation and clearer value propositions will siphon off quality seeking segments, while the platform’s large but undifferentiated catalog becomes increasingly irrelevant in a crowded streaming landscape. Discovery fatigue will worsen, reducing viewing depth and accelerating churn among high value users. Without a shift toward intentional curation, the brand will lose cultural relevance, shrink into a low-consideration commodity service, and face growing pressure on retention, acquisition costs, and long-term viability.
+- **Moment of misery, what is the user likely doing outside the product (Google, spreadsheets, a competitor) because your tool isn’t serving them?:** Users who feel overwhelmed by your 15,000-title catalog and don’t trust the platform’s recommendations often leave to seek guidance elsewhere. They Google “best movies to watch tonight,” check Reddit threads for curated lists, or browse critics’ sites like Rotten Tomatoes and Letterboxd to find what’s actually good. Some create personal spreadsheets to keep track of must watch titles or manage their own watchlists manually. Others bypass your platform altogether and open a competitor known for better curation, relying on its editorial picks or trending hubs to make a confident viewing choice. In short: they’re forced to build their own external decision-support system because your product isn’t giving them taste, clarity, or direction
+- **Problem hook, summarize the business risk and user pain into one urgent sentence.:** If we don’t act now, the platform will continue losing high value users who are frustrated by endless scrolling and forced to seek better curation elsewhere, accelerating churn and pushing us toward commodity status in a fiercely competitive market.
+- **Value proposition, based on the proposed initiative (Spotlight or Velocity), what is the new value and why is it urgent to launch now?:** The Spotlight initiative delivers a decisive shift from overwhelming volume to confident, high-quality discovery by providing expertly curated collections and weekly top picks that eliminate scrolling fatigue and rebuild trust in our catalog. By positioning the platform as a tastemaker rather than a warehouse, Spotlight offers users clarity, cultural relevance, and time-saving guidance—exactly what they’re seeking but currently finding elsewhere. It’s urgent to launch now because engagement is plateauing, competitors are strengthening their curation, and every month we wait further entrenches our reputation for mid-tier overload and accelerates churn among the most valuable segments.
 
-## 1. Chosen scenario
-
-**Path:** _StreamLine Spotlight (B2C) · RouteLogic Velocity (B2B) · my own initiative_
-
-_One line on why you picked it._
-
-## 2. The strategic crisis
-
-_The big-picture business risk. If the company does nothing for 12 months, what happens to its market position?_
-
-> If we do nothing for 12 months, the company will…
-
-## 3. The moment of misery
-
-_The specific point where the product fails the user, forcing a manual workaround (Google, spreadsheets, group texts, a competitor)._
-
-> The user is currently forced to…
-
-## 4. Problem hook
-
-_One urgent sentence fusing the business risk and the user pain — your pitch for why this is the most important thing to work on right now._
-
-> We must solve [business risk] by addressing [user pain]…
-
-## 5. Value proposition
-
-_Who it's for, the new value, and why it's urgent to launch now._
-
-> For **[who]**, we will **[value]** because **[urgent why]**.
-
-## 6. Cold-read self-review
-
-_Read your hook back as a skeptical stakeholder. If you don't feel the urgency, that's your data._
-
-| Question | Your answer |
-|---|---|
-| Is the business risk high-stakes enough to justify a new initiative? | _____ |
-| Is the moment of misery systemic, or just an edge case? | _____ |
-| Does the value proposition actually remove the obstacle? | _____ |
-
-## 7. Finalized hypothesis _(complete in Module 3)_
-
-> Based on [qual + quant evidence], I believe that [solving X] for [persona] will result in [outcome], as measured by a [X%] change in [success metric]. I will protect [guardrail metric] and make a go/no-go decision after [decision window].
-
-## Link to full artifact
-
-_[link to your Problem Hook Builder export / Slide 1 of your deliverables deck]_
+## Cold-read your own hook
+- **Is the business risk high enough to justify a new initiative, a high-stakes threat, or a minor inconvenience?:** The business risk is high-stakes and absolutely justifies a new initiative. With engagement already plateauing and the platform perceived as a warehouse of undifferentiated content, standing still for 12 months would deepen user frustration, accelerate churn among quality-seeking viewers, and further erode brand relevance in a competitive market where curated experiences are rapidly becoming standard. This isn’t a minor inconvenience, it’s a strategic threat that jeopardizes retention, reputation, and long-term market position. The cost of inaction compounds every month, making an initiative like Spotlight not just valuable but essential to halt decline and regain momentum.
+- **Is the moment of misery a systemic problem or just an edge case?:** It’s a systemic problem, not an edge case. Large portions of your audience are experiencing the same pain: too many undifferentiated titles, not enough guidance, and a discovery experience that pushes them to external sources for trusted recommendations. This behavior isn’t limited to a niche group, it’s a widespread symptom of decision fatigue and declining confidence in the platform’s ability to surface what’s truly worth watching. Because the catalog is so large and the current experience doesn’t reduce complexity, the “moment of misery” is baked into everyday use and will continue to scale as the library grows.
+- **Does the value proposition actually remove the obstacle you identified, or is it a generic feature?:** Yes, the value proposition directly addresses and removes the specific obstacle, rather than offering a generic feature. The core user pain is decision fatigue and lack of trusted guidance, which pushes viewers outside the platform to find what’s worth watching. Spotlight’s curated collections, weekly top picks, and editorially driven discovery are explicitly designed to fix that exact problem: they reduce complexity, restore confidence, and eliminate the need for external searches or competitor platforms. This is not just adding another feature; it fundamentally reshapes the user’s experience from overwhelming choice to confident selection, solving the systemic moment of misery at its root.
