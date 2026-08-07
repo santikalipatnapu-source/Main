@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future State Journey — Tom, The Already-Lost User</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1F2421;
+    --paper: #FAF8F3;
+    --card: #FFFFFF;
+    --teal: #2E6E62;
+    --teal-light: #E4EFEC;
+    --coral: #C4552F;
+    --coral-light: #F7E8E1;
+    --line: #DAD5C8;
+    --muted: #6B675C;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    padding: 64px 24px 96px;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.15;
+    max-width: 700px;
+    margin-bottom: 12px;
+  }
+  .subhead {
+    color: var(--muted);
+    font-size: 16px;
+    max-width: 620px;
+    margin-bottom: 8px;
+  }
+  .strategy {
+    font-size: 15px;
+    color: var(--ink);
+    background: var(--teal-light);
+    border-left: 3px solid var(--teal);
+    padding: 14px 18px;
+    max-width: 720px;
+    margin-top: 28px;
+  }
+  .strategy b { font-weight: 600; }
+
+  /* Timeline */
+  .timeline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 56px 0 8px;
+    position: relative;
+  }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    right: 22px;
+    height: 1px;
+    background: var(--line);
+    z-index: 0;
+  }
+  .tl-node {
+    position: relative;
+    z-index: 1;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--card);
+    border: 1.5px solid var(--teal);
+    color: var(--teal);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tl-endcap {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* Stage cards */
+  .stages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .stage {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 22px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .stage-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 19px;
+    color: var(--ink);
+  }
+  .stage-field { display: flex; flex-direction: column; gap: 3px; }
+  .stage-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .stage-value { font-size: 13.5px; color: var(--ink); line-height: 1.5; }
+  .pain-field .stage-value {
+    background: var(--coral-light);
+    color: #7A3319;
+    padding: 6px 8px;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+
+  /* Advantages */
+  .advantages {
+    margin-top: 72px;
+  }
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .adv-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .adv-card {
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 4px;
+    padding: 22px 20px;
+  }
+  .adv-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: #9BC4BA;
+    margin-bottom: 10px;
+  }
+  .adv-text { font-size: 14px; line-height: 1.55; }
+  .adv-text b { color: #fff; font-weight: 600; }
+
+  footer {
+    margin-top: 72px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 860px) {
+    .stages, .adv-list { grid-template-columns: 1fr; }
+    .timeline { display: none; }
+    h1 { font-size: 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">Future State Journey · Win-Back Initiative</div>
+  <h1>Tom, the already-lost user</h1>
+  <p class="subhead">A 52-year-old, long-tenured subscriber who cancelled after volume outpaced curation — and found a competitor's twice-weekly hand-picked email a better fit for his evenings.</p>
+
+  <div class="strategy">
+    <b>Strategy:</b> Restore brand authority and win back users by prioritizing human-led curation and restoration over mass-market scale.
+  </div>
+
+  <div class="timeline">
+    <div class="tl-node">1</div>
+    <div class="tl-node">2</div>
+    <div class="tl-node">3</div>
+    <div class="tl-node">4</div>
+  </div>
+  <div style="display:flex; justify-content:space-between; margin-bottom: 8px;">
+    <span class="tl-endcap">Lapsed subscriber</span>
+    <span class="tl-endcap">Reactivated subscriber</span>
+  </div>
+
+  <div class="stages">
+
+    <div class="stage">
+      <div class="stage-name">1. Signal</div>
+      <div class="stage-field">
+        <div class="stage-label">User action</div>
+        <div class="stage-value">Receives a weekly Spotlight email with confident, editorial picks.</div>
+      </div>
+      <div class="stage-field">
+        <div class="stage-label">Internal state</div>
+        <div class="stage-value">Skeptical but curious, primed by his existing competitor-email habit.</div>
+      </div>
+      <div class="stage-field pain-field">
+        <div class="stage-label">Pain point addressed</div>
+        <div class="stage-value">Replaces "volume" with a small, human-curated set of options.</div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-name">2. First return</div>
+      <div class="stage-field">
+        <div class="stage-label">User action</div>
+        <div class="stage-value">Taps one recommended title, lands directly on playback.</div>
+      </div>
+      <div class="stage-field">
+        <div class="stage-label">Internal state</div>
+        <div class="stage-value">Cautiously testing whether the platform has actually changed.</div>
+      </div>
+      <div class="stage-field pain-field">
+        <div class="stage-label">Pain point addressed</div>
+        <div class="stage-value">Removes decision fatigue — action leads straight to benefit.</div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-name">3. Trust</div>
+      <div class="stage-field">
+        <div class="stage-label">User action</div>
+        <div class="stage-value">Watches the pick, finds it good, opens next week's email.</div>
+      </div>
+      <div class="stage-field">
+        <div class="stage-label">Internal state</div>
+        <div class="stage-value">Trust rebuilding; the "worth watching now" feeling returns.</div>
+      </div>
+      <div class="stage-field pain-field">
+        <div class="stage-label">Pain point addressed</div>
+        <div class="stage-value">Restores confidence the algorithm previously destroyed.</div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-name">4. Habit</div>
+      <div class="stage-field">
+        <div class="stage-label">User action</div>
+        <div class="stage-value">Resubscribes to access the full curated experience.</div>
+      </div>
+      <div class="stage-field">
+        <div class="stage-label">Internal state</div>
+        <div class="stage-value">Platform reclassified from "warehouse" to "trusted curator."</div>
+      </div>
+      <div class="stage-field pain-field">
+        <div class="stage-label">Pain point addressed</div>
+        <div class="stage-value">Converts a one-time win-back into a recurring habit.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="advantages">
+    <h2>Competitive advantages over Tom's manual workaround</h2>
+    <div class="adv-list">
+      <div class="adv-card">
+        <div class="adv-num">01</div>
+        <div class="adv-text"><b>Integrated, not fragmented.</b> Tom's email requires finding the film elsewhere; Spotlight delivers curation and playback in one tap.</div>
+      </div>
+      <div class="adv-card">
+        <div class="adv-num">02</div>
+        <div class="adv-text"><b>Scalable taste-matching.</b> A platform-native curator can personalize beyond two generic weekly titles.</div>
+      </div>
+      <div class="adv-card">
+        <div class="adv-num">03</div>
+        <div class="adv-text"><b>Full catalog on demand.</b> Tom keeps the curated simplicity he switched for, without losing access to 15,000 titles when he wants to browse.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span>Persona: Tom, The Already-Lost User</span>
+    <span>Source: UXR-04</span>
+  </footer>
+
+</div>
+</body>
+</html>
