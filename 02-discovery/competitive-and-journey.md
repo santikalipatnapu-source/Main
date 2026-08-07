@@ -1,17 +1,13 @@
-# Competitive Analysis & Journey Map
+# Competitive Analysis & Journey Map (Module 2)
 
-> Module 2 · Discover Product Opportunities via Qualitative Signals — ★ Deliverable 2
->
-> _You'll complete this during Module 2._
-
-## Workaround summary
-
-_How do users solve this problem today, because the existing tools don't meet their needs?_
-
-_____
-
-## High-level journey map
-
-_The step-by-step experience of your proposed solution, showing how it removes current friction._
-
-_[screenshot or link to your journey map — make sure it's shareable]_
+## Responses
+- **Role, who are you solving for? (the specific user segment or profile):** Tom- The Already-Lost User
+- **Goal, what is this user ultimately trying to achieve?:** Wants his evenings filled with a small number of well-chosen films, not a large catalog to sift through himself.
+- **Friction, the main barrier (moment of misery) stopping them from succeeding:** UXR-04 — "I cancelled last year. It became a warehouse. Volume went up, quality of my evenings went down. A competitor emails me two hand-picked films a week and I watch both." Tom is the direct, literal proof of your hook's thesis: he didn't just get frustrated, he left and found better curation elsewhere. He's not a warning sign — he's the outcome your hook is warning about, already realized.
+- **External tools, the outside platforms or tools the user is forced to use:** UXR-04 names one external tool/channel, and no others are specified or implied by name. Here's exactly what is and isn't in the data.•	A competitor's curation email service :Tom describes it only as "a competitor" that "emails me two hand-picked films a week." No platform name, streaming service, or newsletter brand is given in the source material.
+- **The process, the 3 to 5 manual steps the user takes to get the job done:** UXR-04 does not contain a 3–5 step process. The full quote is one sentence describing an outcome, not a workflow. There's no detail on how Tom subscribed to the competitor email, how he decides which nights to watch, how he accesses the film once recommended, etc. Constructing a 3–5 step manual process here would mean inventing steps not present in the research.
+- **Core frustration, the exact moment the process feels most “broken”:** Staying inside what UXR-04 actually supports rather than inventing a moment that isn't in the quote. "Volume went up, quality of my evenings went down."
+This is the pivot point in Tom's quote  the moment he names the platform shifting from asset to liability. It's not a single UI interaction or a specific bug he hit; it's a cumulative realization, not an incident. That distinction matters for how you use this in the deck.•	Because it's cumulative rather than a single event, you can't point to one bug ticket as its root cause the way you could for Raj (BUG-1042) or Nadia (BUG-1061). It's better read as the lived experience of the broader Discovery & Curation failure already logged in the Executive Summary (BUG-1091 low-diversity recs, BUG-1080 broken search, no mood/occasion browsing) — Tom is naming the aggregate effect of those failures, not one instance of them.
+- **The evidence, a specific quote or behavior from the research that proves this:** The evidence — direct quote from UXR-04:
+"I cancelled last year. It became a warehouse. Volume went up, quality of my evenings went down. A competitor emails me two hand-picked films a week and I watch both."
+- **📎 Your journey map, a shareable link, or the map file you committed (e.g. journey-map.html):** https://github.com/santikalipatnapu-source/Main/blob/main/02-discovery/tom-future-state-journey.html
