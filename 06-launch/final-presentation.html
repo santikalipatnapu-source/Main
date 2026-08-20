@@ -1,0 +1,203 @@
+
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>StreamLine Spotlight Presentation</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: #07162C;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+section {
+  min-height: 100vh;
+  padding: 60px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #fdba74;
+}
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #fb923c;
+  color: #07162C;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.pill {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #22d3ee;
+  color: #07162C;
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: 700;
+}
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #fb923c;
+  width: 0%;
+  z-index: 1000;
+}
+#dots {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffffff44;
+}
+.dot.active {
+  background: #fb923c;
+}
+</style>
+</head>
+<body>
+<div id='progress'></div>
+<div id='dots'></div>
+
+<!-- Cover -->
+<section id='cover'>
+  <div class='label'>Cover</div>
+  <h1>StreamLine Spotlight, A Personalised Discovery Rail</h1>
+  <p>Turn an overwhelming home screen into 30-minute watching sessions with a Spotlight rail that tells each Explorer why they will love a title.</p>
+  <p>Your Name · Product Management Cohort · Jun 2026</p>
+  <p>Repo: https://github.com/your-handle/pm-final-project</p>
+  <a class='button' href='https://www.figma.com/your-spotlight-prototype'>Prototype</a>
+</section>
+
+<!-- Slide 5 -->
+<section id='strategy'>
+  <div class='label'>Strategy</div>
+  <h2>Problem Statement</h2>
+  <p>Casual Explorers open StreamLine to unwind but bounce from a generic, algorithm-only home screen. "Nothing to play" is the #1 reason cited for short, sub-10-minute sessions.</p>
+  <h2>Value Proposition</h2>
+  <p>Spotlight reframes discovery from endless scrolling into a curated, reasoned shortlist, six titles, each with a one-line "why you will love this" so the choice feels effortless.</p>
+  <h2>Hypothesis</h2>
+  <p>We believe a personalised Spotlight rail for Casual Explorers will increase the share of 30-minute sessions started from discovery, measured by a +2pt lift within 14 days, without hurting 7-day retention.</p>
+</section>
+
+<!-- Slide 6 -->
+<section id='research'>
+  <div class='label'>Research</div>
+  <h2>Competitive Analysis / Workaround</h2>
+  <p>Today Explorers cope by leaving to TikTok / YouTube for recommendations, then returning to StreamLine to search manually. Netflix "Top Picks" and Spotify "Made For You" both frame recommendations with an explicit reason; StreamLine surfaces titles with no rationale.</p>
+  <h2>Journey Map</h2>
+  <p>Open app → scan three generic rows → hesitate (the moment of misery) → bounce. Spotlight inserts a reasoned shortlist exactly at the hesitation point, before the user gives up.</p>
+</section>
+
+<!-- Slide 7 -->
+<section id='blueprint'>
+  <div class='label'>Blueprint</div>
+  <h2>Prioritisation / Roadmap</h2>
+  <p>MoSCoW:<br>Must: pinned Spotlight rail + "why you will love this" reason.<br>Should: taste-profile tuning controls.<br>Could: social-proof badges.<br>Won’t: full home-screen redesign.<br>Now/Next/Later roadmap ships a V1 rail in 6 weeks.</p>
+  <h2>PRD Highlights</h2>
+  <p>A pinned top rail of 6 personalised titles, each with a single AI-generated one-line reason. No other home-screen changes in V1. Falls back to the existing editorial row if the taste profile is empty.</p>
+  <a class='button' href='https://www.figma.com/your-spotlight-prototype'>View Prototype</a>
+</section>
+
+<!-- Slide 8 -->
+<section id='validation'>
+  <div class='label'>Validation</div>
+  <h2>Experiment Plan</h2>
+  <p>A/B test, 50/50 split, 14 days. Primary metric: share of 30-minute sessions started from discovery (baseline 11%, MDE +2pt). Guardrail: 7-day retention must not drop more than 2pt. Ship if primary hits with guardrail safe; iterate if flat; kill if retention regresses.</p>
+</section>
+
+<!-- Slide 9 -->
+<section id='launch'>
+  <div class='label'>Launch</div>
+  <h2>GTM Strategy</h2>
+  <p>Goal: engagement.<br>Audience: existing Casual Explorers who have not adopted discovery.<br>Tier: M (medium).<br>Channels: in-app announcement (owned), lifecycle email (owned), and a lifecycle push. Enablement: a support macro + a changelog entry.</p>
+  <h2>Success Metrics + Bad Signal</h2>
+  <p>Track feature adoption rate, 30-minute discovery sessions, and time-to-first-play.<br>Bad signal: adoption rises but 7-day retention stays flat, that means novelty, not durable value.</p>
+</section>
+
+<!-- Slide 10 -->
+<section id='story'>
+  <div class='label'>Story</div>
+  <h2>Friction + Aha Moment</h2>
+  <p>Writing the one-line "why you will love this" reason forced real clarity on the persona, the aha moment was realising the reason copy, not the algorithm, was the product. The hardest part was resisting the urge to redesign the whole home screen.</p>
+  <h2>Key Takeaways / Next</h2>
+  <p>Biggest takeaway: a tight, reasoned shortlist beats a longer list. Next I would close the loop, feed Spotlight engagement back into the taste model and A/B test social-proof badges.</p>
+</section>
+
+<!-- Thank You -->
+<section id='thankyou'>
+  <div class='label'>Submit</div>
+  <h2>Thank You</h2>
+  <p>Repo: https://github.com/your-handle/pm-final-project</p>
+  <p>Product Management Cohort · Jun 2026</p>
+  <a class='button'>Submit to the learning platform</a>
+</section>
+
+<script>
+// Progress bar
+const progress = document.getElementById('progress');
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+  const windowHeight = document.body.scrollHeight - window.innerHeight;
+  const progressWidth = (scrollPosition / windowHeight) * 100;
+  progress.style.width = progressWidth + '%';
+});
+
+// Dot navigation
+const sections = document.querySelectorAll('section');
+const dotsContainer = document.getElementById('dots');
+sections.forEach((_, idx) => {
+  const dot = document.createElement('div');
+  dot.className = 'dot';
+  dotsContainer.appendChild(dot);
+});
+
+// Keyboard navigation
+window.addEventListener('keydown', (e) => {
+  const current = Math.round(window.scrollY / window.innerHeight);
+  if (['ArrowDown', 'Space'].includes(e.key)) {
+    window.scrollTo({ top: (current + 1) * window.innerHeight, behavior:'smooth' });
+  }
+  if (e.key === 'ArrowUp') {
+    window.scrollTo({ top: (current - 1) * window.innerHeight, behavior:'smooth' });
+  }
+  if (e.key === 'Home') {
+    window.scrollTo({ top: 0, behavior:'smooth' });
+  }
+  if (e.key === 'End') {
+    window.scrollTo({ top: sections.length * window.innerHeight, behavior:'smooth' });
+  }
+  if (e.key === 'Escape') {
+    window.scrollTo({ top: 0, behavior:'smooth' });
+  }
+});
+</script>
+</body>
+</html>
